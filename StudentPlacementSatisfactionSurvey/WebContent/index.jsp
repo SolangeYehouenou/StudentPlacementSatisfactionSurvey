@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<form action="surveyResult.jsp" method="post"></form>
+<form action="surveyResult.jsp" method="post">
 <table>
 
 <tr><td> 1. Please rate your overall satisfaction working at TechDigital Oasis!</td>
@@ -22,6 +22,7 @@
 
 
 </table>
+</form>
 
 </body>
 </html>
