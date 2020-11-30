@@ -1,8 +1,11 @@
 package com.studentPlacement.Login;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -27,7 +30,19 @@ public class LoginCookies3 extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		
+		Cookie ck[] = request.getCookies();
+		response.setContentType("text/html");
+		PrintWriter out = response.getWriter();
+		out.println("<!DOCTYPE html>");
+		out.println("<html>");
+		for(int i=0; i<ck.length; i++) 
+		{
+			
+			out.println("Cookie name is: "+ck[i].getName()+ " and value is: "+ck[i].getValue()+ "<br>");
+		}
+		
+		out.println("</html>");
 	}
 
 	/**

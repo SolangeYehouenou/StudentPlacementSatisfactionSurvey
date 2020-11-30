@@ -32,8 +32,8 @@ public class LoginCookies extends HttpServlet {
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 		out.println("<!DOCTYPE html>");
-		out.println("html");
-		out.println("<form action action = 'http://localhost:3030/StudentPlacementSatisfactionSurvey/LoginCookies2'>");
+		out.println("<html>");
+		out.println("<form action = 'http://localhost:3030/StudentPlacementSatisfactionSurvey/LoginCookies2'>");
 		out.println("Name: <input type = 'text' name = 'txtName'><br><br>");
 		out.println("Email: <input type = 'text' name = 'txtEmail'><br><br>");
 		out.println("<input type = 'submit' value = 'LOGIN'>");
