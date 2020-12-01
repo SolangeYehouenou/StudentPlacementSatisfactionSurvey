@@ -3,10 +3,9 @@ package com.studentSurvey.jsp;
 
 public class SurveyBean {
 	
-	String[] questions = {"Please rate your overall satisfaction working at TechDigital Oasis?", 
-			"What department do you work in at Tech Digital Oasis?", 
-			"Which Placement location do you work at?", 
-			"Assuming that there are five (5) levels within your organization, with one (1) being the lowest and five (5) being the highest. At what level is placement job?"};
+	String[] questions = {"Please rate your overall satisfaction working at TechDigital Oasis!", 
+			"My team members show mutual trust of each other!"};
+			
 			
 	
 	int[][] answers = new int[questions.length][2];

@@ -11,19 +11,16 @@
 </head>
 <body>
 
-<form action="surveyResult.jsp" method="post">
+<form action="surveyResult.jsp" method="get">
 <table>
 
 	<%
-		for(int i = 0; i<surveyBean.getTotalQuestions(); i++){
-			
-		
+		for(int i = 0; i<surveyBean.getTotalQuestions(); i++){					
 	%>
 
 <tr><td><%=i +1 %>. <%= surveyBean.getQuestions(i) %></td>
-<td><input type="radio" name="Q<%= i%>" value="Very dissatisfied"> Very Dissatisfied</td>
-<td><input type="radio" name="Q<%= i%>" value="Neutral"> Neutral </td>
-<td><input type="radio" name="Q<%= i%>" value="Very satisfied"> Very satisfied</td>
+<td><input type="radio" name="Q<%= i%>" value="Satisfied"> Satisfied</td>
+<td><input type="radio" name="Q<%= i%>" value="Dissatisfied"> Dissatisfied</td>
 <% } %>
 <tr><td></td><td><input type="submit"></td><td><input type="reset"></td></tr>
 
