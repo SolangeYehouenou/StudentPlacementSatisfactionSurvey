@@ -2,10 +2,25 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>FaceBook Login JavaScript</title>
+<title>System Login</title>
 </head>
 <body>
 
+<div align="center">
+<h1>User Login Form</h1>
+<form action="login" method="post">
+<table>
+<tr><td>User Name: </td><td><input type="text" name="username"></td></tr>
+<tr><td>Password: </td><td><input type="password" name="password"></td></tr>
+<tr><td></td><td><h1><input type="submit" value="Login"></h1><br></td></tr>
+<tr><td><h1> Or Login Using FaceBook: </h1></td><td>
+
+</table>
+</form>
+<br><br><br>
+</div>
+
+<div align="center">
 <script>
  // This is called with the results from from FB.getLoginStatus().
  function statusChangeCallback(response) {
@@ -56,6 +71,6 @@
 </fb:login-button>
 <div id="status">
 </div>
-
+</div>
 </body>
 </html>
