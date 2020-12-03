@@ -4,15 +4,13 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Login Success</title>
+<title>See you again soon</title>
 </head>
 <body>
 
-<div align="right">
-<a href ="http://localhost:3030/StudentPlacementSatisfactionSurvey/logout.jsp">Logout</a>
-</div>
 <div align="center">
-<h1>Welcome! You have successfully logged in</h1>
-</div>
+<h3>You have successfully logged out.</h3>
+<h1>Thanks for visiting! See you again soon.</h1>
+
 </body>
 </html>
