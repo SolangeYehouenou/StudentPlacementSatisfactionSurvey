@@ -16,23 +16,24 @@
 	
 	for(int i = 0; i<surveyBean.getTotalQuestions(); i++){
 	
-	String ans = request.getParameter("q" + i);
-	if (ans.equals("Satisfied"))
+	String ans = request.getParameter("q" +i);
+	
+	if (ans ==("Dissatisfied"))
 		surveyBean.setAnswers(i, 0);
 	else
 		surveyBean.setAnswers(i, 1);
-		
+	
 	}
 
 	//Display
 	
 	for(int i = 0; i<surveyBean.getTotalQuestions(); i++){
 		%>
-			<%= i+1%>. <%=surveyBean.getQuestions(i) %> (<%=surveyBean.getAnswers(i, 1) %> Satisfied)(<%=surveyBean.getAnswers(i, 0) %> Dissatisfied)
+			<%= i+1%>. <%= surveyBean.getQuestions(i) %> (<%= surveyBean.getAnswers(i, 1) %> Satisfied)(<%= surveyBean.getAnswers(i, 0) %> Dissatisfied)
 			<br>
 		
 		<% } %>
-	}
+	
 
 
 

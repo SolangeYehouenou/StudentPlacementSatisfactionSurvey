@@ -9,8 +9,8 @@
 <body>
 
 <div align="center">
-<h3>You have successfully logged out.</h3>
-<h1>Thanks for visiting! See you again soon.</h1>
-
+<h1>Thank you for completing this survey! We will be in touch soon.</h1><br><br>
+<img src="C:\Users\W-book\git\StudentPlacementSatisfactionSurvey\StudentPlacementSatisfactionSurvey\Images\loggedOut.jpg" alt="logout_image">
+</div>
 </body>
 </html>

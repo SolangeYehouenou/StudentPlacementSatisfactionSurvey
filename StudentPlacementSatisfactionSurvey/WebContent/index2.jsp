@@ -5,7 +5,7 @@
 <title>System Login</title>
 </head>
 <body>
-
+  
 <div align="center">
 <h1>User Login Form</h1>
 <form action="index2" method="post">
@@ -13,16 +13,15 @@
 <tr><td>User Name: </td><td><input type="text" name="username"></td></tr>
 <tr><td>Password: </td><td><input type="password" name="password"></td></tr>
 <tr><td></td><td><h1><input type="submit" value="Login"></h1><br></td></tr>
-<tr><td><h1> Or Login Using FaceBook: </h1></td><td>
+<tr><td><h1> Or Login Using FaceBook: </h1></td></tr>
 
 </table>
 </form>
-<br><br><br>
 </div>
 
 <div align="center">
 <script>
- // This is called with the results from from FB.getLoginStatus().
+ // This is called with the results from FB.getLoginStatus().
  function statusChangeCallback(response) {
  console.log('statusChangeCallback');
  console.log(response);
@@ -67,10 +66,9 @@
  // Here we run a very simple test of the Graph API after login is
  // successful. See statusChangeCallback() for when this call is made.
 </script>
-<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+<fb:login-button scope="public_profile, email" onlogin="checkLoginState()";>
 </fb:login-button>
-<div id="status">
-</div>
+<div id="status"></div>
 </div>
 </body>
 </html>
