@@ -1,12 +1,13 @@
 package com.studentPlacement.profile;
 
 public class Profile_Bean {
-	
-	
 	private String user_name;
 	private String email;
 	private String profile_picture;
 	private String id;
+	
+	// This is where I declare the variables about the data
+	//to get from the facebook profile of the student user.
 	public String getUser_name() {
 		return user_name;
 	}
@@ -31,9 +32,4 @@ public class Profile_Bean {
 	public void setId(String id) {
 		this.id = id;
 	}	
-
-	public Profile_Bean() {
-		// TODO Auto-generated constructor stub
-	}
-
 }

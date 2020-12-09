@@ -1,6 +1,5 @@
 package com.studentPlacement.profile;
 
-
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
@@ -9,9 +8,9 @@ import org.json.JSONObject;
 
 public class Profile_Modal {
 	
-	
 	public Profile_Bean call_me(String access_token) throws Exception {
-	     String url = "https://graph.facebook.com/v2.12/me?fields=id,name,picture,email&access_token="+access_token;
+		
+	     String url = "https://graph.facebook.com/v9.0/me?fields=id,name,picture,email&access_token="+access_token;
 	     URL obj = new URL(url);
 	     HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 	     // optional default is GET
@@ -41,9 +40,4 @@ public class Profile_Modal {
 	     obj_Profile_Bean.setProfile_picture(data_response.getString("url"));
 		return obj_Profile_Bean;
 	   }
-
-	public Profile_Modal() {
-		// TODO Auto-generated constructor stub
-	}
-
 }

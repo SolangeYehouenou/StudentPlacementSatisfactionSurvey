@@ -41,7 +41,8 @@ public class LoginCookies extends HttpServlet {
 		out.println("</html>");
 	}
 		
-		
+		// These three loginCookies files are independent from the other parts of this project 
+	//they only serve to showcase the workings of cookies in a software generally.
 		
 		/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)

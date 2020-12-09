@@ -3,6 +3,7 @@
   <display-name>StudentPlacementSatisfactionSurvey</display-name>
   <welcome-file-list>
     <welcome-file>index2.jsp</welcome-file>
-    
+   
   </welcome-file-list>
+ 
 </web-app>

@@ -18,10 +18,15 @@
 </table>
 </form>
 </div>
-
+	
 <div align="center">
+
 <script>
- // This is called with the results from FB.getLoginStatus().
+
+ // This is called with the results from from FB.getLoginStatus().
+ //On this page designed AS GUI, I use event driven programming where the use of buttons such as submit or logout leads to specific events within
+//a central unit that accepts all data and then delegates it to the separate modules that handle the particular type. 
+
  function statusChangeCallback(response) {
  console.log('statusChangeCallback');
  console.log(response);
@@ -48,8 +53,9 @@
  appId : '204724307877943',
  cookie : true, // enable cookies to allow the server to access 
  // the session
+ 
  xfbml : true, // parse social plugins on this page
- version : 'v2.8' // use graph api version 2.8
+ version : 'v9.0' // use graph api version 2.8
  });
  FB.getLoginStatus(function(response) {
  statusChangeCallback(response);
@@ -66,9 +72,10 @@
  // Here we run a very simple test of the Graph API after login is
  // successful. See statusChangeCallback() for when this call is made.
 </script>
-<fb:login-button scope="public_profile, email" onlogin="checkLoginState()";>
+<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
 </fb:login-button>
-<div id="status"></div>
+<div id="status">
 </div>
+
 </body>
 </html>

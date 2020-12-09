@@ -25,7 +25,8 @@ public class LoginDao {
 			e.printStackTrace();
 		}
 	}
-	
+	// This is an example of software architecture where the code can be reused to connect pages to database in other parts of this software,
+	// for example registration page for maintainability and easy access.
 	
 	public Connection getConnection() {
 		
