@@ -19,14 +19,15 @@
 				<div id="description">
 					<h4>Let us know how we can improve Tech Digital Oasis Student Placement Programme</h4>
 					<div>
-					<p><img src="C:\Users\W-book\git\StudentPlacementSatisfactionSurvey\StudentPlacementSatisfactionSurvey\Images\opinion.jpg" alt="logo_image" width="460" height="345"></p>
+					<p><img src="C:\Users\W-book\git\StudentPlacementSatisfactionSurvey\StudentPlacementSatisfactionSurvey\Images\opinion.jpg" alt="opinion_image" width="460" height="345"></p>
 					</div>
 					<div></div>
 				</div>
 				<!-- On this survey form, we are going to create some labels for our questions and also some textfields to record the answers.
 				If we were to connect to a database, then the form will have an action="connect.php" file (I have included in the WebContent on my workspace) and 
 				also a method="post". But in this case, we will showcase the addEventListeners function and see it work in the browser.-->
-				<form action="" method=""  id="surveyForm" name="myForm">
+				
+				<form id="surveyForm" name="myForm" class="form">
             <div class="row-tab">
 					<div class="label1-tab">
 					<label>Name:</label>
@@ -201,10 +202,10 @@
 					</div>
 					<div class="row-tab">
 					<div class="button-tab" align="center">
-					<p><button type="submit" onclick="alert('Thanks so much for giving us feedback!')">SUBMIT</button></p>
+					<p><button type="submit" onclick="alert('Thanks so much for giving us feedback!')" class="button">SUBMIT</button></p>
 					</div>
 					<div class="reset-tab" align="center">
-					<p><button type="submit" onclick="alert('This form has been reset')">RESET</button></p>
+					<p><button type="submit" onclick="alert('This form has been reset')" class="button2">RESET</button></p>
 					<div class="panel-footer" align="right">
 					<small>&copy; Solange Yehouenou</small>
 					</div>
@@ -217,7 +218,7 @@
 		
 		const surveyForm = document.querySelector('.surveyForm'),
 		form = surveyForm.querySelectorAll('.form'),
-		submitInput = form[0].querySelector('button[type="submit"]');
+		submitButton = form[0].querySelector('button[type="submit"]');
 		
 		function getDataForm(e){
 			//The e.preventDefault() function below is very important to show our alert text in the browser.
@@ -236,6 +237,7 @@
 		document.addEventListener('DOMContentLoaded', function(){
 			submitInput.addEventListener('click', getDataForm, false);
 		}, false);
+		alert(formData.reset());
 		
 		</script>
 			
