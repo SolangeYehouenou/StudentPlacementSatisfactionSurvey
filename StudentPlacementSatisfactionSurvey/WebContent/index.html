@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Survey Form</title>
+ <link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+<body>
+	<div align="right">
+	<a href ="http://localhost:3030/StudentPlacementSatisfactionSurvey/logout.jsp">Logout</a>
+	</div>
+	<header id="title">
+		<h1>Survey Form</h1>
+	</header>
+		<section>
+			<div class="container">
+				<div id="description">
+					<h4>Let us know how we can improve Tech Digital Oasis Student Placement Programme</h4>
+					<div>
+					<p><img src="C:\Users\W-book\git\StudentPlacementSatisfactionSurvey\StudentPlacementSatisfactionSurvey\Images\opinion.jpg" alt="logo_image" width="460" height="345"></p>
+					</div>
+					<div></div>
+				</div>
+				<!-- On this survey form, we are going to create some labels for our questions and also some textfields to record the answers.
+				If we were to connect to a database, then the form will have an action="connect.php" file (I have included in the WebContent on my workspace) and 
+				also a method="post". But in this case, we will showcase the addEventListeners function and see it work in the browser.-->
+				<form action="" method=""  id="surveyForm" name="myForm">
+            <div class="row-tab">
+					<div class="label1-tab">
+					<label>Name:</label>
+					</div>
+					<div class="input-tab"><input type="text" name="Name" placeholder="Enter your name">
+					</div>
+					</div>
+					<div class="row-tab">
+					<div class="label1-tab">
+					<label>Email:</label>
+					</div>
+					<div class="input-tab"><input type="text" name="Email" placeholder="Enter your email">
+					</div>
+					</div>
+					<div class="row-tab">
+					<div class="label1-tab">
+					<label>Age:</label>
+					</div>
+					<div class="input-tab"><input type="number" name="Age" placeholder="Age"></div>
+					</div>
+					<div  class="row-tab">
+					<div class="label-tab">
+					<label>Which option best describes your employee level during your placement?</label>
+					</div>
+					<div class="select-tab">
+					<select id="select-box" name="jobLevel">	
+						<option>Select an option</option>			
+						<option>Student</option>
+						<option>Entry Level Engineer</option>
+						<option>Middle Level Engineer</option>
+						<option>Senior Level Engineer</option>
+						<option>Executive Level</option>
+					</select>
+					</div>
+					</div>
+					
+					<div class="row-tab">
+					<div class="label-tab">
+						<label>1. My job is interesting and challenging</label>
+					</div>
+					<div class="input-tab">
+					<div>
+					<input type="radio" name="question1" value="I agree"><label>I agree</label>
+					</div>
+					<div>
+					<input type="radio" name="question1" value="I disagree"><label>I disagree</label>
+					</div>
+					<div>
+					<input type="radio" name="question1" value="I'm not sure"><label>I'm not sure</label>
+					</div>
+					</div>
+					</div>
+					
+					<div class="row-tab">
+					<div class="label-tab">
+						<label>2. My team makes a significant contribution to the success of this company</label>
+					</div>
+					<div class="input-tab">
+					<div>
+					<input type="radio" name="question2" value="I agree"><label>I agree</label>
+					</div>
+					<div>
+					<input type="radio" name="question2" value="I disagree"><label>I disagree</label>
+					</div>
+					<div>
+					<input type="radio" name="question2" value="I'm not sure"><label>I'm not sure</label>
+					</div>
+					</div>
+					</div>
+					<div class="row-tab">
+					<div class="label-tab">
+						<label>3. My supervisor gives me useful feedback about my work</label>
+					</div>
+					<div class="input-tab">
+					<div>
+					<input type="radio" name="question3" value="I agree"><label>I agree</label>
+					</div>
+					<div>
+					<input type="radio" name="question3" value="I disagree"><label>I disagree</label>
+					</div>
+					<div>
+					<input type="radio" name="question3" value="I'm not sure"><label>I'm not sure</label>
+					</div>
+					</div>
+					</div>
+					<div class="row-tab">
+					<div class="label-tab">
+						<label>4. There is cooperation between my department and other departments within this company</label>
+					</div>
+					<div class="input-tab">
+					<div>
+					<input type="radio" name="question4" value="I agree"><label>I agree</label>
+					</div>
+					<div>
+					<input type="radio" name="question4" value="I disagree"><label>I disagree</label>
+					</div>
+					<div>
+					<input type="radio" name="question4" value="I'm not sure"><label>I'm not sure</label>
+					</div>
+					</div>
+					</div>
+					<div class="row-tab">
+					<div class="label-tab">
+						<label>5. There is cooperation between my department and other departments within this company</label>
+					</div>
+					<div class="input-tab">
+					<div>
+					<input type="radio" name="question5" value="I agree"><label>I agree</label>
+					</div>
+					<div>
+					<input type="radio" name="question5" value="I disagree"><label>I disagree</label>
+					</div>
+					<div>
+					<input type="radio" name="question5" value="I'm not sure"><label>I'm not sure</label>
+					</div>
+					</div>
+					</div>
+					<div class="row-tab">
+					<div class="label-tab">
+						<label>6. Please rate your overall satisfaction working at TechDigital Oasis</label>
+					</div>
+					<div class="input-tab">
+					<div>
+					<input type="radio" name="question6" value="Satisfied"><label>Satisfied</label>
+					</div>
+					<div>
+					<input type="radio" name="question6" value="Dissatisfied"><label>Dissatisfied</label>
+					</div>
+					<div>
+					<input type="radio" name="question6" value="Neutral"><label>Neutral</label>
+					</div>
+					</div>
+					</div>
+					<div class="row-tab">
+					<div class="label-tab">
+					<label>At which one of our branches is your placement based?</label>
+					</div>
+					<div class="select-tab">
+					<select id="select-box" name="Location">	
+						<option>Select a location</option>			
+						<option>London</option>
+						<option>Manchester</option>
+						<option>Milton Keynes</option>
+						<option>Nottingham</option>
+						<option>Liverpool</option>
+					</select>
+					</div>
+					</div>
+					
+					<div class="row-tab">
+					<div class="label-tab">
+						<label>Select your ethnic background</label>
+					</div>
+					<div class="input-tab">
+					<input type="radio" name="background" value="White British"><label>White British</label>
+					<input type="radio" name="background" value="Black British"><label>Black British</label>
+					<input type="radio" name="background" value="Asian british"><label>Asian British</label>
+					</div>
+					</div>
+					<div class="row-tab">
+					<div class="label-tab">						
+					<label>Are you:</label>
+					</div>
+					<div class="input-tab">
+					<div>
+					<input type="radio" name="gender" value="Male"><label>Male</label>
+					</div>
+					<div>
+					<input type="radio" name="gender" value="Female"><label>Female</label>
+					</div>
+					</div>
+					</div>
+					<div class="row-tab">
+					<div class="button-tab" align="center">
+					<p><button type="submit" onclick="alert('Thanks so much for giving us feedback!')">SUBMIT</button></p>
+					</div>
+					<div class="reset-tab" align="center">
+					<p><button type="submit" onclick="alert('This form has been reset')">RESET</button></p>
+					<div class="panel-footer" align="right">
+					<small>&copy; Solange Yehouenou</small>
+					</div>
+					</div>
+					</div>
+        </form>
+				
+				
+				<script>
+		
+		const surveyForm = document.querySelector('.surveyForm'),
+		form = surveyForm.querySelectorAll('.form'),
+		submitInput = form[0].querySelector('button[type="submit"]');
+		
+		function getDataForm(e){
+			//The e.preventDefault() function below is very important to show our alert text in the browser.
+			e.preventDefault();
+			
+			
+			var formData = new FormData(form[0]);
+			// The alert carries the function formData.get() and collects all our questions and answers.
+			
+			alert( formData.get('Name') + '-' + formData.get('Email') + '-' + formData.get('Age') + '-' +
+			formData.get('jobLevel') + '-' + formData.get('question1') + '-' + formData.get('question2') + '-' + formData.get('question3') + '-' +
+			formData.get('question4') + '-' + formData.get('question5') + '-' + formData.get('question6') + '-' + formData.get('Location') + '-' +
+			formData.get('background') + '-' + formData.get('gender'));
+		}
+		//The DOMContentLoader will displays these in the browser when the submitInput button is clicked.
+		document.addEventListener('DOMContentLoaded', function(){
+			submitInput.addEventListener('click', getDataForm, false);
+		}, false);
+		
+		</script>
+			
+				
+			</div>
+		</section>
+</body>
+</html>
