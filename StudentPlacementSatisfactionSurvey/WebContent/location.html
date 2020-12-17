@@ -17,6 +17,9 @@ width:750px;
 function initMap(){
 	var map=new google.maps.Map(document.getElementById("map"),{center:{lat:51.507, lng:0.127}, zoom:5});
 }
+//This script works better than the facebook script as it simply fetches the data using my Google Maps API.
+//Compared to the Facebook API, this map responded much quicker to the fetch because facebook access-token has to 
+//do with user data which is very sensitive and no longer accept request from insecure protocol, http.
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5x5qw2-cIWtnlpVQ7OvVochVj0QKY36A=&callback=initMap" async defer></script>
 

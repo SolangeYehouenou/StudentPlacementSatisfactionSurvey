@@ -10,6 +10,9 @@ public class Profile_Modal {
 	
 	public Profile_Bean call_me(String access_token) throws Exception {
 		
+		// Here is where I access profile information from the user's facebook using access_token. If my App or website was live,
+		//I will redirect the user to the survey page after login.
+		
 	     String url = "https://graph.facebook.com/v9.0/me?fields=id,name,picture,email&access_token="+access_token;
 	     URL obj = new URL(url);
 	     HttpURLConnection con = (HttpURLConnection) obj.openConnection();

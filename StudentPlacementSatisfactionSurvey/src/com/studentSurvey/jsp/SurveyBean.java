@@ -16,7 +16,7 @@ public class SurveyBean {
 			"My coworkers motivate me",
 			"The work in my department is well organized",
 			"There is cooperation between my department and other departments within this company",
-			"This company encourages employees to think \"out of the box\"",
+			"This company encourages employees to think out of the box",
 			"At this company, employees are treated like family",
 			"Human relations employees are available to me to discuss my career plans",
 			"This organisaztion accept responsibilities for developing its employees' careers",

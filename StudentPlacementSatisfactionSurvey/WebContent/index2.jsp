@@ -3,23 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <title>System Login</title>
+ <link rel="stylesheet" type="text/css" href="style2.css">
 </head>
 <body>
-  
+  <!-- The lines below showcase our login system where the user can login to start the survey. There is an option to
+  login using email and password and another to login using facebook profile. I use the Facebook Graph API to access the user profile. This will show
+  the user's username, email, profile picture and Id.-->
 <div align="center">
 <h1>User Login Form</h1>
-<form action="index2" method="post">
+<form action="index2" method="post" class="container">
 <table>
-<tr><td>User Name: </td><td><input type="text" name="username"></td></tr>
-<tr><td>Password: </td><td><input type="password" name="password"></td></tr>
-<tr><td></td><td><h1><input type="submit" value="Login"></h1><br></td></tr>
-<tr><td><h1> Or Login Using FaceBook: </h1></td></tr>
+<tr><td align="center">User Name: </td><td><input type="text" name="username"></td></tr>
+<tr></tr>
+<tr><td align="center">Password: </td><td><input type="password" name="password"></td></tr>
+<tr></tr>
+<tr><td></td><td><h1><input type="submit" value="Login" class="button"></h1><br></td></tr>
+<tr id="title"><td><h1> Or Login Using FaceBook: </h1></td></tr>
+
 
 </table>
 </form>
 </div>
 	
-<div align="center">
+<div align="center" class="container">
 
 <script>
 
@@ -75,6 +81,7 @@
 <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
 </fb:login-button>
 <div id="status">
+</div>
 </div>
 
 </body>
